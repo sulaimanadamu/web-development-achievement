@@ -4,11 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form</title>
+    <style>
+        body{
+            background: black;
+            color: whitesmoke;
+        }
+    </style>
 </head>
 <body>
     <p>
-    <form action="https://httpbin.org/get" method="get"></form>
+        <figure>
+<figcaption><center><h1>Please fill the form below</h1></center></figcaption>
+    <form action="https://httpbin.org/get" method="get">
+        
+        <fieldset>
+            <legend><h2>Personal information</h2></legend>
     <label for="firstName">First name:</label>
     <input type="text" name="firstName" id="firstName" placeholder="first name" autocomplete required>
     </p>
@@ -18,17 +29,21 @@
     </p>
     <p>
     <label for="password">password:</label>
-    <input type="tel" name="password" id="password" placeholder="password" required>
+    <input type="password" name="password" id="password" placeholder="password" required>
     </p>
     <p>
     <label for="phone">Phone:</label>
     <input type="tel" name="phone" id="phone" placeholder="phone number" required>
     </p>
     <p>
-    <label for="fav-Decade">favorite Decade:</label>
+    <label for="fav-Decade">Decade you are born:  </label>
     <input type="number" name="fav-Decade" id="fav-Decade" placeholder="phoneNumber" max="2022" min="1950" step="10" value="1950" required>
-    </p>
-     <p><h2>Book Genre</h2></p>
+    </p></fieldset>
+    <br>
+    <fieldset>
+        <legend><h2>About books</h2></legend>
+    
+     <p><h3>Book Genre</h3></p>
      <label for="books-type">Choose a book:</label>
      <select name="books-type" id="books-type">
         <optgroup label="Romannce">
@@ -41,6 +56,54 @@
         <option value="Not-home-yet">Not home yet</option>
     </optgroup>
      </select>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Additional information</legend>
+    <p><h2>Do you have a pet?</h2></p>
+   <p><input type="radio" id="pets" name="pets" value="yes">
+    <label for="pets">Yes</label>
+</p> 
+<p>
+    <input type="radio" name="pets" id="pets" value="no">
+    <label for="pets">No</label>
+</p>
+<br>
+<legend><h2>Pet Type</h2></legend>
+<p>
+    <input type="checkbox" name="petType" id="petType" value="Dog">
+    <label for="petType">Dog</label>
+</p>
+<p>
+    <input type="checkbox" name="petType" id="petType" value="cat">
+    <label for="petType">Cat</label>
+</p>
+<p> 
+    <input type="checkbox" name="petType" id="petType" value="snake">
+    <label for="petType">Snake</label>
+</p>
+</fieldset>
 
+<fieldset>
+    <legend><h2>Send me a note:</h2></legend>
+    <textarea name="message" id="message" cols="100" rows="10" placeholder="Type in your message here."></textarea>
+</fieldset><br>
+<button type="submit">submit</button>
+<button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+<button type="reset">reset</button>
+
+
+<!-- <label for="coffee">favorite coffee:</label>
+<input type="text" name="favCoffee" id="coffee" list="coffee-list">
+ <datalist id="coffee-list">
+    <option value="coffee" ></option>
+    <option value="latte"></option>
+    <option value="espresso"></option> 
+    <option value="cortado"></option>
+    <option value="americano"></option>
+    <option value="others"></option>
+ </datalist> -->
+</form>
+</figure>
 </body>
 </html>
