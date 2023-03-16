@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: rgb(33, 28, 28);
+            margin: 0;
+            padding: 0;
+            color: antiquewhite;
+        }
+
+       
+        header{
+            display: block;
+            margin: 0px;
+            height: auto
+            
+            /* border: 2px solid green; */
+            padding: 20px;
+        }
+
+       .top-bar{
+        list-style-type: none;
+        display: flex;
+    /* border: 2px solid green;  */
+        justify-content:space-between;
+        align-items: baseline;
+        background-color: black;
+        margin-top: 0px;
+        align-content: center;
+       }
+
+      
+
+       .site-map{
+        list-style-type: none;
+        display: flex;
+        /* border: 2px solid green; */
+        flex-grow: 1;
+        justify-content:space-evenly;
+        margin-left: auto;
+        align-items: baseline;
+        /* border: 2px solid pink; */
+        font-size: 20px;
+        
+       }
+
+       #sec{
+        margin-left: 20%;
+       }
+
+
+       .site-map>:last-child{
+        display: block;
+        padding: 8px 12px;
+        border-radius: 8px;
+        background-color: red;
+        color:lavenderblush;
+       }
+       .site-map>:last-child:hover{
+            background: hotpink;
+
+       }
+li{
+    margin-bottom: 20px;
+}
+.top-bar>:first-child{
+    padding: 0;
+    /* border: 2px solid gray; */
+    margin-bottom: 0px;
+    font-size: 40px;
+    padding:2px 6px 2px 0px;
+}
+
+
+a{
+    display: block;
+}
+
+/* code for the main block starts from this line*/
+main{
+    display: block;
+    width: max-content;
+    margin: auto 100px;
+    line-height: 50px;
+}
+
+main *{
+    font-size: 20px;
+}
+
+main span{
+    font-size: 80px;
+    font-family:cursive;
+    text-shadow: 4px 4px purple;
+}
+.body{
+    display: block;
+    width: 100%;
+    height: fit-content;
+    margin: auto;
+}
+    </style> 
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/dcc6eed35d.js" crossorigin="anonymous"></script>
+    
+    <header>
+        
+        <nav>  
+            <ul class="top-bar">
+                <li><h1></h1><i class="fas fa-solid fa-code" ></i>Adamu sulaiman</h1></li>
+                <div class="site-map">
+                    <li id="sec">Projects</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li><i class="fab fa-brands fa-linkedin" aria-hidden="true"></i><span class="sr-only">Linkedin</span></li>
+                    <li><i class="fab fa-brands fa-github" aria-hidden="true"></i><span class="sr-only">Github</span></li> 
+                    <li><a>Resume</a></li>
+                </div>
+            </ul> 
+        </nav>
+    </header>
+    <main>
+        <div class="body">
+        <p><span>Hi</span>, my name is </p>
+        <strong>
+            Adamu sulaiman
+        </strong>
+        <p>I am designing my first web page.</p>
+        <p>
+            I am a begginner software developer, and data scientist in the making
+        </p>
+    </div>
+    </main>
+</body>
+</html>
