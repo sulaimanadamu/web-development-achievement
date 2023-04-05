@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./garfieldnb.png">
+    <title>Document</title>
+    <style>
+        body{
+            position: relative;
+        }
+        @font-face {
+            font-family: sdr;
+            src: url("./SouthQDemoRegular.ttf");
+        }
+        .cont > div{
+                height: 200px;
+                width:100%;
+                
+        }
+        .cont{
+            display: grid;
+            grid-template-columns: repeat(2, 310px);
+            position: relative;
+            border: 2px solid red;
+            background-image: linear-gradient(to top right, rgb(84, 150, 84), rgb(225, 159, 170), rgb(231, 83, 231));
+            -webkit-box-reflect: bottom 20px;
+        }
+        #center{
+            display: flex;
+            width: 50%;
+            background-color: rgba(251, 243, 243,0.4);
+            backdrop-filter: blur(40%);
+             position: absolute;
+             top: 50%;
+             left: 50%;
+             transform: translate(-50%, -50%);
+             justify-content: center;
+             align-items: center;
+             font-family: sdr;
+             font-weight: 900;
+             font-size: 40px;
+        }
+ 
+ img{
+    width:200px;
+    height: 200px;
+    -webkit-box-reflect: below 0px;
+ }
+ .three{
+    border-left: 100px;
+    background-color: transparent;
+ }
+      
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div id="center">Building start from here!</div>
+        <div class="three"></div>
+        <div class="four"></div>
+    </div>
+    <div id="animated">
+
+    </div>
+<img src="./garfieldnb.png" alt="">
+    </body>
+</html>

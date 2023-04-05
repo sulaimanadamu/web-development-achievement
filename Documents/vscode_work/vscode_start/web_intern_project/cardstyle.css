@@ -1,0 +1,33 @@
+
+.card{
+    width: 600px;
+    display:flex;
+    margin:  auto;
+    border: 2px solid gray;
+    justify-content: space-around;
+    border-radius: 40px;
+    writing-mode:sideways-rl;
+    background-color: #F2E8CF;
+    font-size: large;
+}
+
+#info{
+    text-align: center;
+    padding-right: 40px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+p{
+    font-style: italic;
+    text-shadow: 2px 2px 20px lightgray;
+}
+img{
+
+    padding: 20px 10px 20px 20px;
+}
+
+html{
+    margin: 0;
+    background-color: #A7C957;
+}
